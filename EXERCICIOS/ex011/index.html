@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midies em HTML5</title>
+</head>
+<body>
+    <H1>imagem dinamica</H1>
+    <p>tente abrir o site atravez de outros dispositivos ou diminua o  tamanho do navegador </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="Imagens 1000x1000">
+    </picture>
+    <h2>reproduzindo audios</h2>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <!--audio src="mideas/hungria1.mp3"controls autoplay </audio> </!-->
+
+    <audio preload="metadata" autoplay controls loop >
+
+        <source src="mideas/hungria1.mp3" type="audio/mpeg">
+        <source src="mideas/hungria1.ogg" type="audio/ogg">
+        <source src="mideas/hungria1.wav" type="audio/wav">
+        <p>infelizmente seu navegador nao conseguiu reproduzir esta midea.</p>
+        <a href="mideas/hungria1.mp3">Para baixar a musica clique aqui</a>
+    
+    </audio>
+
+</body>
+</html>
